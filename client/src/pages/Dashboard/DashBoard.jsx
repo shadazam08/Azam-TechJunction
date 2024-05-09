@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Box, Button, Grid, Toolbar, Typography, styled } from "@mui/material";
+import { Box, Button, Toolbar, styled } from "@mui/material";
+// import Grid from "@mui/material/Unstable_Grid2";
 import { Helmet } from "react-helmet";
 import { purple } from "@mui/material/colors";
+import RecommendCourses from "../RecommendCourses/RecommendCourses";
+import webbanner from "../../Assets/image/webbanner.gif";
 
 const DashBoard = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -102,138 +105,20 @@ const DashBoard = () => {
             className="hidden lg:block lg:w-1/2"
             style={{
               clipPath: "polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%)",
+              // clipPath: "circle(70% at 50% 50%)",
+              // clipPath: "ellipse(70% 70% at 50% 50%)",
             }}
           >
             <img
               className="h-full object-cover"
               style={{ width: "100%" }}
-              src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"
+              src={webbanner}
             />
             <div className="h-full bg-black opacity-25"></div>
           </div>
         </div>
-        <div className="text-center mt-6 text-3xl font-bold text-gray-800 md:text-4xl">
-          Recommended Courses
-        </div>
-        <Grid
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          gap={2}
-          className="container mx-auto lg:text-left px-8 md:px-12 lg:w-1/2 "
-          sx={{ marginTop: "2rem", justifyContent: "center" }}
-        >
-          <Grid
-            item
-            xs={"auto"}
-            sx={{
-              boxShadow:
-                "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-              marginTop: "1rem",
-            }}
-          >
-            <img
-              src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"
-              alt="Python Tutorials - 100 Days of Code"
-              style={{ width: "100%", marginBottom: "0.5rem" }}
-            />
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component="div"
-              sx={{ fontWeight: 400 }}
-            >
-              FREE COURSE
-            </Typography>
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component={"div"}
-              sx={{ fontWeight: 500 }}
-            >
-              Python Tutorials - 100 Days of Code
-            </Typography>
-            <Typography component={"p"}>
-              Python is one of the most demanded programming languages in the
-              job market. Surprisingly, it is equally easy to learn and master
-              Python. Let's commit our 100 days of code to python!
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={"auto"}
-            sx={{
-              boxShadow:
-                "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-              marginTop: "1rem",
-            }}
-          >
-            <img
-              src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"
-              alt="Python Tutorials - 100 Days of Code"
-              style={{ width: "100%", marginBottom: "0.5rem" }}
-            />
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component="div"
-              sx={{ fontWeight: 400 }}
-            >
-              FREE COURSE
-            </Typography>
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component={"div"}
-              sx={{ fontWeight: 500 }}
-            >
-              Ultimate JavaScript Course
-            </Typography>
-            <Typography component={"p"}>
-              This latest JavaScript course comes with premium curriculum that
-              covers everything from basics to advance. On top of that, you will
-              get my handwritten notes of JS for completely free. What are you
-              waiting for? Just Enroll Buddy
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={"auto"}
-            sx={{
-              boxShadow:
-                "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-              marginTop: "1rem",
-            }}
-          >
-            <img
-              src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png"
-              alt="Python Tutorials - 100 Days of Code"
-              style={{ width: "100%", marginBottom: "0.5rem" }}
-            />
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component="div"
-              sx={{ fontWeight: 400 }}
-            >
-              FREE COURSE
-            </Typography>
-            <Typography
-              gutterBottom
-              variant="subtitle1"
-              component={"div"}
-              sx={{ fontWeight: 500 }}
-            >
-              React JS Tutorials For Beginners
-            </Typography>
-            <Typography component={"p"}>
-              React is a free and open-source front-end JavaScript library. This
-              series will cover React from starting to the end. We will learn
-              react from the ground up!
-            </Typography>
-          </Grid>
-        </Grid>
       </Box>
+      <RecommendCourses />
     </>
   );
 };
