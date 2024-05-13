@@ -31,7 +31,7 @@ const Routes = () => {
     <>
       <NavBar />
       <RouterProvider router={router} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
