@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Paper, Toolbar, Typography, styled } from "@mui/material";
+import { Box, Button, Paper, Typography, styled } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import { purple } from "@mui/material/colors";
 import ReactjsTutorial from "../../Assets/image/ReactjsTutorial.gif";
@@ -37,7 +37,7 @@ const RecommendCourses = () => {
           <Item>
             <img
               src={DSATutorial}
-              alt="Python Tutorials - 100 Days of Code"
+              alt="DSA JAVA Tutorials For Beginners "
               style={{ width: "100%", marginBottom: "0.5rem" }}
             />
             <Typography
@@ -71,7 +71,7 @@ const RecommendCourses = () => {
           <Item>
             <img
               src={JavaScriptTutorial}
-              alt="Python Tutorials - 100 Days of Code"
+              alt="JavaScript Tutorial for Beginners"
               style={{ width: "100%", marginBottom: "0.5rem" }}
             />
             <Typography
@@ -97,7 +97,9 @@ const RecommendCourses = () => {
               types, control structures, functions, and objects.
             </Typography>
             <div className="flex justify-center lg:justify-start mt-6">
-              <ColorButton variant="contained">Free Courses</ColorButton>
+              <ColorButton variant="contained" href="/javascript">
+                Free Courses
+              </ColorButton>
             </div>
           </Item>
         </Grid>

@@ -8,7 +8,6 @@ import webbanner from "../../Assets/image/webbanner.gif";
 
 const DashBoard = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const texts = ["React JS", "JavaScript", "DSA JAVA", "PostgreSQL"]; // Add more texts here
 
   useEffect(() => {
     const text = "Azam TechJunction";
@@ -36,6 +35,7 @@ const DashBoard = () => {
   }));
 
   useEffect(() => {
+    const texts = ["React JS", "JavaScript", "DSA JAVA", "PostgreSQL"]; // Add more texts here
     const span = document.getElementById("typed-subtext");
     let index = 0;
     const intervalId = setInterval(() => {
@@ -53,7 +53,7 @@ const DashBoard = () => {
 
     // Cleanup function
     return () => clearInterval(intervalId);
-  }, [currentTextIndex, texts]);
+  }, [currentTextIndex]);
 
   return (
     <>
@@ -113,6 +113,7 @@ const DashBoard = () => {
               className="h-full object-cover"
               style={{ width: "100%" }}
               src={webbanner}
+              alt="covers thumb"
             />
             <div className="h-full bg-black opacity-25"></div>
           </div>

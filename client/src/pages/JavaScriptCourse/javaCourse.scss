@@ -1,0 +1,22 @@
+.codes {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  color: #4a148c !important;
+  background-color: #f5f5f5 !important;
+}
+
+.changeWidth {
+  // display: flex;
+  width: calc(100% - 300px);
+
+  @media (max-width: 600px) {
+    width: 100%; // Hide on small screens (less than 600px width)
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

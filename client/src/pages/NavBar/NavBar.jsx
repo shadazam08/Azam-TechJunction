@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -14,12 +13,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Logo from "../../Assets/logo/logo.png";
-import LogoSvg from "../../Assets/logo/logo.svg";
 import { styled } from "@mui/material";
 import { purple } from "@mui/material/colors";
 
-const drawerWidth = 240;
+const drawerWidth = 150;
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Courses", path: "/courses" },
@@ -52,19 +49,19 @@ const NavBar = (props) => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }} className="text-purple-700">
-        {/* <img
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", mt: 5 }}>
+      {/* <Typography variant="h6" sx={{ my: 2 }} className="text-purple-700">
+        <img
           src={Logo}
           style={{
             width: 140,
             height: 60,
-            marginLeft: '25%',
+            marginLeft: "25%",
           }}
-        /> */}
+        />
         Azam TechJunction
-      </Typography>
-      <Divider />
+      </Typography> */}
+      {/* <Divider /> */}
       <List>
         {navItems.map((item, index) => (
           <ListItem key={index} disablePadding>
@@ -86,7 +83,11 @@ const NavBar = (props) => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBars component="nav">
+      <AppBars
+        component="nav"
+        position="fixed"
+        sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
