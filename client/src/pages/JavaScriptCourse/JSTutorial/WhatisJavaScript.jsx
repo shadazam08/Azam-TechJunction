@@ -14,6 +14,8 @@ import "./scss/js.scss";
 import TutorialButton from "../button/TutorialButton";
 import Prism from "prismjs";
 import "prismjs/themes/prism.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -44,27 +46,27 @@ const WhatisJavaScript = () => {
             of three main parts:
           </Typography>
           <List>
-            <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+            <ListItem sx={{ textAlign: "justify" }}>
               <Typography component={"span"}>
                 <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                  &#x27A4;
+                  <FontAwesomeIcon icon={faCircleArrowRight} />
                 </Typography>{" "}
                 ECMAScript provides the core functionality.
               </Typography>
             </ListItem>
-            <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+            <ListItem sx={{ textAlign: "justify" }}>
               <Typography component={"span"}>
                 <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                  &#x27A4;
+                  <FontAwesomeIcon icon={faCircleArrowRight} />
                 </Typography>{" "}
                 The Document Object Model (DOM) provides interfaces for
                 interacting with elements on web pages
               </Typography>
             </ListItem>
-            <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+            <ListItem sx={{ textAlign: "justify" }}>
               <Typography component={"span"}>
                 <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                  &#x27A4;
+                  <FontAwesomeIcon icon={faCircleArrowRight} />
                 </Typography>{" "}
                 The Browser Object Model (BOM) provides the browser API for
                 interacting with the web browser.
@@ -141,18 +143,18 @@ const WhatisJavaScript = () => {
             Hence, two distinct versions of JavaScript were in the market:
           </Typography>
           <List>
-            <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+            <ListItem sx={{ textAlign: "justify" }}>
               <Typography component={"span"}>
                 <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                  &#x27A4;
+                  <FontAwesomeIcon icon={faCircleArrowRight} />
                 </Typography>{" "}
                 JavaScript in Netscape Navigator
               </Typography>
             </ListItem>
-            <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+            <ListItem sx={{ textAlign: "justify" }}>
               <Typography component={"span"}>
                 <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                  &#x27A4;
+                  <FontAwesomeIcon icon={faCircleArrowRight} />
                 </Typography>{" "}
                 JScript in Internet Explorer.
               </Typography>

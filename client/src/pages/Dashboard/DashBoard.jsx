@@ -6,6 +6,14 @@ import { purple } from "@mui/material/colors";
 import RecommendCourses from "../RecommendCourses/RecommendCourses";
 import webbanner from "../../Assets/image/webbanner.gif";
 
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[700],
+  "&:hover": {
+    backgroundColor: purple[700],
+  },
+}));
+
 const DashBoard = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
@@ -26,16 +34,8 @@ const DashBoard = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(purple[500]),
-    backgroundColor: purple[700],
-    "&:hover": {
-      backgroundColor: purple[700],
-    },
-  }));
-
   useEffect(() => {
-    const texts = ["React JS", "JavaScript", "DSA JAVA", "PostgreSQL"]; // Add more texts here
+    const texts = ["React JS", "JavaScript", "PostgreSQL"]; // Add more texts here
     const span = document.getElementById("typed-subtext");
     let index = 0;
     const intervalId = setInterval(() => {

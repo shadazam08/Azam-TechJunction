@@ -1,27 +1,11 @@
 import React, { useEffect } from "react";
-import {
-  Box,
-  List,
-  ListItem,
-  Paper,
-  Toolbar,
-  Typography,
-  styled,
-} from "@mui/material";
+import { Box, List, ListItem, Toolbar, Typography } from "@mui/material";
 import Prism from "prismjs";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import "prismjs/themes/prism.css";
-
-// const Item = styled(Paper)(({ theme }) => ({
-// //   backgroundColor: "#F8F7F4",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "justify",
-//   // color: "#ffff",
-// }));
 
 const JSHelloWorld = () => {
   useEffect(() => {
@@ -48,7 +32,7 @@ const JSHelloWorld = () => {
             <code>{"<script>"}</code> element. There are two ways to use the{" "}
             <code>{"<script>"}</code> element in an HTML page:
             <List>
-              <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+              <ListItem sx={{ textAlign: "justify" }}>
                 <Typography component={"span"}>
                   <Typography component={"span"} sx={{ color: "#4A148C" }}>
                     <FontAwesomeIcon icon={faCircleArrowRight} />
@@ -59,7 +43,7 @@ const JSHelloWorld = () => {
                   </Typography>
                 </Typography>
               </ListItem>
-              <ListItem components={"li"} sx={{ textAlign: "justify" }}>
+              <ListItem sx={{ textAlign: "justify" }}>
                 <Typography component={"span"}>
                   <Typography component={"span"} sx={{ color: "#4A148C" }}>
                     <FontAwesomeIcon icon={faCircleArrowRight} />

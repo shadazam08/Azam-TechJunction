@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import {
   Box,
   Link,
@@ -10,11 +9,11 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
-import javaScriptImage from "../../Assets/image/javascript-736400.svg";
-import "./javaCourse.scss";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCircleArrowRight, faMinus } from "@fortawesome/free-solid-svg-icons";
+import postgresqloriginalImage from "../../Assets/image/postgresql-original-wordmark.svg";
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -25,23 +24,28 @@ const Item = styled(Paper)(({ theme }) => ({
   //   color: theme.palette.text.secondary,
 }));
 
-const JavaScriptCourse = () => {
+const PostgreSQLTutorial = () => {
   return (
     <>
       <Helmet>
-        <title>JavaScript Table of Contents - Azam TechJunction</title>
+        <title>
+          Table of Contents for PostgreSQL Tutorial - Azam TechJunction
+        </title>
       </Helmet>
       <Box component={"main"} className="changeWidth">
         <Toolbar />
         <Box sx={{ p: 3 }}>
-          <Typography variant="h4">JavaScript Tutorial</Typography>
+          <Typography variant="h4">PostgreSQL Tutorial</Typography>
           <Typography paragraph mt={2} align="justify">
-            Welcome to the azamtectjunction website! This JavaScript Tutorial
-            helps you learn the JavaScript programming language from scratch
-            quickly and effectively.
+            Welcome to the azamtectjunction website! Our{" "}
+            <strong>PostgreSQL</strong> tutorial is designed to help you grasp
+            PostgreSQL concepts swiftly. With numerous practical examples,
+            you'll quickly become proficient in PostgreSQL and be ready to
+            implement your newfound knowledge in application development.
           </Typography>
           <Typography paragraph align="justify">
-            If you find yourself in any of the following situations:
+            If you find yourself in any of the following situations, you may
+            benefit from our PostgreSQL tutorial:
           </Typography>
           <Typography
             component={"div"}
@@ -56,7 +60,7 @@ const JavaScriptCourse = () => {
                   <Typography component={"span"} sx={{ color: "#4A148C" }}>
                     <FontAwesomeIcon icon={faCircleArrowRight} />
                   </Typography>{" "}
-                  Unsure about where to start learning JavaScript.
+                  Looking to learn PostgreSQL fast.
                 </Typography>
               </ListItem>
               <ListItem sx={{ textAlign: "justify" }}>
@@ -64,8 +68,8 @@ const JavaScriptCourse = () => {
                   <Typography component={"span"} sx={{ color: "#4A148C" }}>
                     <FontAwesomeIcon icon={faCircleArrowRight} />
                   </Typography>{" "}
-                  Tired of simply copying and pasting JavaScript code without
-                  really understanding how it works.
+                  Developing applications using PostgreSQL as the back-end
+                  database management system.
                 </Typography>
               </ListItem>
               <ListItem sx={{ textAlign: "justify" }}>
@@ -73,21 +77,32 @@ const JavaScriptCourse = () => {
                   <Typography component={"span"} sx={{ color: "#4A148C" }}>
                     <FontAwesomeIcon icon={faCircleArrowRight} />
                   </Typography>{" "}
-                  Feel stuck to add richer and more compelling features to your
-                  websites and web applications because you don’t know how to
-                  get much out of JavaScript.
+                  Migrating from other database management systems such as{" "}
+                  <code className="codes">MySQL</code>,{" "}
+                  <code className="codes">Oracle</code>, and{" "}
+                  <code className="codes">Microsoft SQL Server</code> to
+                  PostgreSQL.
                 </Typography>
               </ListItem>
+              <Typography component={"span"} sx={{ textAlign: "justify" }}>
+                Everything you need to quickly and effectively get started with
+                PostgreSQL is right here on this website.
+              </Typography>
             </List>
 
             <div className="hidden lg:block lg:w-1/2">
               <img
                 className="h-full"
                 style={{ width: "30%", marginLeft: "50%" }}
-                src={javaScriptImage}
+                src={postgresqloriginalImage}
                 alt="Java Script"
               />
             </div>
+          </Typography>
+          <Typography paragraph sx={{ textAlign: "justify" }}>
+            PostgreSQL tutorial demonstrates many unique features of PostgreSQL
+            that position it as the most advanced open-source database
+            management system.
           </Typography>
 
           <Grid container spacing={2} sx={{ mt: 2 }}>
@@ -108,10 +123,11 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/javascript/what-is-javascript">
-                        What is JavaScript?
+                      <Link href="/PostgreSQL/What-is-PostgreSQL">
+                        What is PostgreSQL
                       </Link>{" "}
-                      – introduce you to JavaScript and its history.
+                      <FontAwesomeIcon icon={faMinus} /> introduce you to
+                      PostgreSQL and its applications in today’s software stack.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -119,59 +135,36 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/javascript/code-editors">
-                        Install a JavaScript source code editor
+                      <Link href="/PostgreSQL/PostgreSQL-sample-database">
+                        Introduction to PostgreSQL sample database
                       </Link>{" "}
-                      – "Learn how to install a JavaScript source code editor to
-                      enhance your coding experience.
+                      <FontAwesomeIcon icon={faMinus} /> to learn the PostgreSQL
+                      fast, you need to have a good sample database to practice
+                      with. This tutorial introduces you to a PostgreSQL sample
+                      database called <code className="codes">dvdrental</code>
                     </Typography>
                   </ListItem>
-                  {/* <ListItem sx={{ textAlign: "justify" }}>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Install PostgreSQL on Windows </Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} />
+                      walk you through the steps of how to install PostgreSQL on
+                      Windows.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
                     <Typography component={"span"}>
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
                       <Link href="#">
-                        Meet the Console Tab of Web Development Tools
+                        Connect to PostgreSQL database server{" "}
                       </Link>{" "}
-                      – provide you with a basic introduction to the Console
-                      window on the web browsers.
-                    </Typography>
-                  </ListItem> */}
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      <Link href="#">JavaScript Hello World</Link> – learn how
-                      to execute the first JavaScript code that displays the
-                      famous <code className="codes"> "Hello, World!" </code>{" "}
-                      message.
-                    </Typography>
-                  </ListItem>
-                </List>
-              </Item>
-            </Grid>
-            <Grid xs={12}>
-              <Item>
-                <Typography
-                  component={"h1"}
-                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                >
-                  Section 2. Fundamentals
-                </Typography>
-                <List
-                  sx={{ textAlign: "justify" }}
-                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
-                >
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Syntax – explain the JavaScript syntax, including
-                      whitespace, statements, identifiers, keywords,
-                      expressions, and comments.
+                      <FontAwesomeIcon icon={faMinus} /> show you how to connect
+                      to the PostgreSQL using psql tool and pgAdmin 4 GUI tool.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -179,90 +172,12 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Variables – show you how to declare variables.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Data types – introduce to you the JavaScript data types,
-                      including primitive and reference types.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Number – learn how JavaScript uses the{" "}
-                      <code className="codes">Number</code> type to represent
-                      the integer and floating-point numbers.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Numeric Separator– show you how to make the numbers more
-                      readable by using underscores as numeric separators.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Octal & binary literals – provide support for binary
-                      literals and change the way to represent octal literals.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Boolean – introduce you to the{" "}
-                      <code className="codes">Boolean</code> type.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      String – learn about string primitive type and some basic
-                      string operations.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Object – introduce you to the object type.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Primitive vs. reference values – understand two value
-                      types in JavaScript, including primitive and reference
-                      values, and the differences between them.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Array – introduce you to the{" "}
-                      <code className="codes">Array</code> type and how to
-                      manipulate array elements.
+                      <Link href="#">
+                        Load Sample Database into PostgreSQL Server
+                      </Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> guide you on how to
+                      load the sample database into the PostgreSQL database
+                      server for practicing.
                     </Typography>
                   </ListItem>
                 </List>
@@ -274,7 +189,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 3. Operators
+                  Section 2. Querying Data
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -285,12 +200,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Arithmetic operators – introduce to you the arithmetic
-                      operators including addition (
-                      <code className="codes"> + </code>
-                      ), subtraction (<code className="codes"> - </code>),
-                      multiplication (<code className="codes"> * </code>), and
-                      division (<code className="codes"> / </code>).
+                      <Link href="#">Select</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to query
+                      data from a single table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -298,10 +210,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Remainder operator – show you how to use the remainder
-                      operator (<code className="codes"> % </code>) to get the
-                      remainder left over when one value is divided by another
-                      value.
+                      <Link href="#">Column aliases</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> learn how to assign
+                      temporary names to columns or expressions within a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -309,9 +220,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Assignment operators – guide you on how to use assignment
-                      operators (<code className="codes"> = </code>) to assign a
-                      value or an expression to a variable.
+                      <Link href="#">Order By</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> guide you on how to
+                      sort the result set returned by a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -319,63 +230,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Unary operators – learn how to use unary operators.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Comparison operators – show you how to use comparison
-                      operators to compare two values.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Logical operators – learn how to use the logical
-                      operators: NOT (<code className="codes"> ! </code>), AND (
-                      <code className="codes"> && </code>
-                      ), and OR (<code className="codes"> || </code>).
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Logical assignment operators – introduce to you the
-                      logical assignment operators, including{" "}
-                      <code className="codes"> ||= </code>,{" "}
-                      <code className="codes"> &&= </code>, and{" "}
-                      <code className="codes"> ??= </code>
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Nullish coalescing operator (
-                      <code className="codes"> ?? </code>) – accept two values
-                      and return the second value if the first one is{" "}
-                      <code className="codes"> null </code> or{" "}
-                      <code className="codes"> undefined </code>.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Exponentiation operator – introduce you to the
-                      exponentiation operator (
-                      <code className="codes"> ** </code>) that calculates a
-                      base to the exponent power, which is similar to{" "}
-                      <code className="codes"> Math.pow() </code> method.
+                      <Link href="#">Select Distinct</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> provide you with a
+                      clause that removes duplicate rows in the result set.
                     </Typography>
                   </ListItem>
                 </List>
@@ -387,7 +244,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 4. Control flow Statements
+                  Section 3. Managing Tables
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -398,9 +255,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      if – show you how to use the{" "}
-                      <code className="codes"> if </code> statement to execute a
-                      block if a condition is true.
+                      <Link href="#">Data types</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> cover the most commonly
+                      used PostgreSQL data types.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -408,8 +265,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      if…else – learn how to execute a block of code based on a
-                      specified condition.
+                      <Link href="#">Create a table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> guide you on how to
+                      create a new table in the database.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -417,8 +275,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      if…else…if – check multiple conditions and execute a
-                      block.
+                      <Link href="#">Select Into & Create table </Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> as shows you how to
+                      create a new table from the result set of a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -426,9 +285,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Ternary operators – show you how to make a shortcut for
-                      the <code className="codes"> if </code> statement (
-                      <code className="codes"> ?: </code>).
+                      <Link href="#">Auto-increment column with SERIAL</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> uses SERIAL to add an
+                      auto-increment column to a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -436,10 +295,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      switch – show you how to replace multiple{" "}
-                      <code className="codes"> if </code> statements when
-                      comparing a value with multiple variants by using the{" "}
-                      <code className="codes"> switch </code> statement.
+                      <Link href="#">Sequences</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> introduce you to
+                      sequences and describe how to use a sequence to generate a
+                      sequence of numbers.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -447,9 +306,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      while – learn how to perform a pre-test loop that
-                      repeatedly executes a block of code as long as a specified
-                      condition is <code className="codes">true</code>.
+                      <Link href="#">Identity column</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to use the
+                      identity column.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -457,9 +316,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      do…while – show you how to carry a post-test loop that
-                      executes a block of code repeatedly until a specified
-                      condition is <code className="codes">false</code>.
+                      <Link href="#">Alter table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> modify the structure of
+                      an existing table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -467,8 +326,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      for loop – learn how to repeatedly execute a block of code
-                      based on various options.
+                      <Link href="#">Rename table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> change the name of the
+                      table to a new one.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -476,7 +336,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      break – learn how to prematurely terminate a loop.
+                      <Link href="#">Add column</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to add one
+                      or more columns to an existing table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -484,8 +346,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      continue – show you how to skip the current iteration of a
-                      loop and jump to the next one.
+                      <Link href="#">Drop column</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> demonstrate how to drop
+                      a column of a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -493,9 +356,59 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Comma operator – guide you on how to use the comma
-                      operator in a for loop to update multiple variables at
-                      once.
+                      <Link href="#">Change column data type</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to change
+                      the data of a column.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Rename column</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> illustrate how to
+                      rename one or more columns of a table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Drop table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> remove an existing
+                      table and all of its dependent objects.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Truncate table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> remove all data in a
+                      large table quickly and efficiently.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Temporary table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to use the
+                      temporary table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Copy a table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to copy a
+                      table to a new one.
                     </Typography>
                   </ListItem>
                 </List>
@@ -507,7 +420,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 5. Functions
+                  Section 4. PostgreSQL Constraints
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -518,7 +431,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Functions – introduce you to functions in JavaScript.
+                      <Link href="#">Primary key</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> illustrate how to
+                      define a primary key when creating a table or adding a
+                      primary key to an existing table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -526,9 +442,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Functions are first-class citizens – learn how to store
-                      functions in the variables, pass functions into other
-                      functions as arguments, and return functions as values.
+                      <Link href="#">Foreign key</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to define
+                      foreign key constraints when creating a new table or
+                      adding foreign key constraints for existing tables.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -536,8 +453,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Anonymous Functions – learn about anonymous functions
-                      which are the functions without names.
+                      <Link href="#">DELETE CASCADE</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to
+                      automatically delete rows in child tables when the
+                      corresponding rows in the parent table are deleted.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -545,8 +464,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Pass-by-value – understand how pass-by-value works in
-                      JavaScript.
+                      <Link href="#">CHECK constraint</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> add logic to check
+                      value based on a Boolean expression.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -554,8 +474,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Recursive function – learn how to define recursive
-                      functions.
+                      <Link href="#">UNIQUE constraint</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> ensure that values in a
+                      column or a group of columns are unique across the table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -563,8 +484,19 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Default Parameters – show you how to define default
-                      parameters for functions.
+                      <Link href="#">NOT NULL constraint </Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> ensure values in a
+                      column are not NULL.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">DEFAULT constraint</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> specify a default value
+                      for a column using the DEFAULT constraint.
                     </Typography>
                   </ListItem>
                 </List>
@@ -576,7 +508,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 6. Objects & Prototypes
+                  Section 5. PostgreSQL Data Types in Depth
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -587,8 +519,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Object Methods – introduce you to the methods of an
-                      object.
+                      <Link href="#">Boolean</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> store TRUE and FALSE
+                      values with the Boolean data type.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -596,8 +529,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Constructor functions – show you how to use constructor
-                      functions to define custom types in JavaScript.
+                      <Link href="#">CHAR, VARCHAR, and TEXT</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> learn how to use
+                      various character types including CHAR, VARCHAR, and TEXT.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -605,7 +539,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Prototype – learn how the prototype works in JavaScript.
+                      <Link href="#">NUMERIC</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to use
+                      NUMERIC type to store values that precision is required.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -613,9 +549,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Constructor/Prototype pattern – show you how to combine
-                      the constructor function and prototype pattern to define
-                      custom types.
+                      <Link>DOUBLE PRECISION</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> learn to store inexact,
+                      variable-precision numbers in the database. The DOUBLE
+                      PRECISION type is also known as the FLOAT type.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -623,8 +560,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Prototypal inheritance – understand prototypal inheritance
-                      in JavaScript.
+                      <Link>REAL</Link> <FontAwesomeIcon icon={faMinus} /> guide
+                      you on how to use single-precision floating-point numbers
+                      in the database
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -632,8 +570,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      What is this in JavaScript – understand the this value and
-                      how it works in JavaScript.
+                      <Link>Integer</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      introduce you to various integer types in PostgreSQL
+                      including SMALLINT, INT and BIGINT.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -641,8 +580,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      globalThis – provide a standard way to access the global
-                      object across environments.
+                      <Link>DATE</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      introduce the DATE data type for storing date values.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -650,8 +589,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Object Properties – dive into the object’s properties and
-                      their attributes.
+                      <Link>Timestamp</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      understand timestamp data types quickly.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -659,217 +598,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      for…in loop – learn how to iterate over properties of an
-                      object using the for...in loop.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Enumerable Properties – learn more about the enumerable
-                      properties.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Own Properties – understand the own and inherited
-                      properties.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Factory functions – learn about the factory functions
-                      which are functions that return objects.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Object Destructuring – learn how to assign properties of
-                      an object to variables.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Optional chaining operator (?.) – simplify the way to
-                      access a property located deep within a chain of connected
-                      objects without having to check if each reference in the
-                      chain is null or undefined.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Object literal syntax extensions – provide a new way to
-                      define object literal.
-                    </Typography>
-                  </ListItem>
-                </List>
-              </Item>
-            </Grid>
-            <Grid xs={12}>
-              <Item>
-                <Typography
-                  component={"h1"}
-                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                >
-                  Section 7. Classes
-                </Typography>
-                <List
-                  sx={{ textAlign: "justify" }}
-                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
-                >
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Class – introduce you to the ES6 class syntax and how to
-                      declare a class.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Getters and Setters – define the getters and setters for a
-                      class using the get and set keywords.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Class Expression – learn an alternative way to define a
-                      new class using a class expression.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Computed property – explain the computed property and its
-                      practical application.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Inheritance – show you how to extend a class using the
-                      extends and super keywords.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      new.target – introduce you to the new.target metaproperty.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Static methods – guide you on how to define methods
-                      associated with a class, not instances of that class.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Static Properties – show you how to define static
-                      properties shared by all instances of a class.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Private Fields – learn how to define private fields in a
-                      class.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Private Methods – show you how to define private methods
-                      in a class.
-                    </Typography>
-                  </ListItem>
-                </List>
-              </Item>
-            </Grid>
-            <Grid xs={12}>
-              <Item>
-                <Typography
-                  component={"h1"}
-                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                >
-                  Section 8. Advanced Functions
-                </Typography>
-                <List
-                  sx={{ textAlign: "justify" }}
-                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
-                >
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Function type – introduce you to the Function type and its
-                      properties and methods.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      call()– understand the call() method and learn how to use
-                      it effectively.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      apply() – learn how to use the apply() method effectively.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      bind() – understand the bind() method and how to apply it
+                      <Link>Interval</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      show you how to use interval data type to handle a period
                       effectively.
                     </Typography>
                   </ListItem>
@@ -878,7 +608,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Closure – understand the closures in JavaScript.
+                      <Link>TIME</Link> <FontAwesomeIcon icon={faMinus} /> use
+                      the TIME datatype to manage the time of day values.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -886,8 +617,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Immediately Invoked Function Expression (IIFE) – learn
-                      about immediately invoked function expressions (IIFE).
+                      <Link>UUID</Link> <FontAwesomeIcon icon={faMinus} /> guide
+                      you on how to use UUID datatype and how to generate UUID
+                      values using supplied modules.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -895,8 +627,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Returning multiple values – guide you on how to return
-                      multiple values from a function.
+                      <Link>Array</Link> <FontAwesomeIcon icon={faMinus} /> show
+                      you how to work with arrays and introduce you to some
+                      handy functions for array manipulation.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -904,8 +637,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Arrow functions – introduce you to the arrow functions (
-                      <code className="codes"> &#8658; </code> )
+                      <Link>hstore</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      introduce you to the hstore data type which is a set of
+                      key/value pairs stored in a single value in PostgreSQL.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -913,8 +647,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Arrow functions: when you should not use – learn when not
-                      to use the arrow functions.
+                      <Link>JSON</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      illustrate how to work with JSON data type and use some of
+                      the most important JSON operators and functions.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -922,8 +657,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Rest parameter – introduce you to the rest parameters and
-                      how to use them effectively.
+                      <Link>User-defined data types</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to use the
+                      CREATE DOMAIN and CREATE TYPE statements to create
+                      user-defined data types.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -931,33 +668,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Callback functions – introduce you to the callback
-                      functions and learn how to use the callbacks to handle
-                      asynchronous operations.
-                    </Typography>
-                  </ListItem>
-                </List>
-              </Item>
-            </Grid>
-            <Grid xs={12}>
-              <Item>
-                <Typography
-                  component={"h1"}
-                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
-                >
-                  Section 9. Promises & Async/Await
-                </Typography>
-                <List
-                  sx={{ textAlign: "justify" }}
-                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
-                >
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Promises – learn about Javascript Promises, what they are,
-                      and how to use them effectively.
+                      <Link>Enum</Link> <FontAwesomeIcon icon={faMinus} /> learn
+                      how to create an enum type that defines a list of fixed
+                      values for a column.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -965,8 +678,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Promise chaining – show you how to execute multiple
-                      asynchronous operations in sequence.
+                      <Link>XML</Link> <FontAwesomeIcon icon={faMinus} /> show
+                      you how to store XML documents in the database using the
+                      XML data type.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -974,9 +688,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Promise composition: Promise.all() & Promise.race() –
-                      learn how to compose a new promise out of several
-                      promises.
+                      <Link>BYTEA</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      learn how to store binary strings in the database.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -984,47 +697,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Promise.any() – learn how to use the JavaScript
-                      Promise.any() method to return the first Promise that
-                      fulfills.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Promise.allSettled() – accept a list of promises and
-                      returns a new promise that resolves to an array of values,
-                      which were settled (either resolved or rejected) by the
-                      input promises.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Promise.prototype.finally() – execute a piece of code when
-                      the promise is settled, regardless of its outcome.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Promise error handling – guide you on how to handle errors
-                      in promises.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      async / await – write asynchronous code in a clearer
-                      syntax.
+                      <Link>Composite Types</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to define
+                      a composite type that consists of multiple fields.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1036,7 +711,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 10. Iterators & Generators
+                  Section 6. Filtering Data
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1047,8 +722,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Iterators – introduce you to the iteration and iterator
-                      protocols.
+                      <Link href="#">Where</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> filter rows based on a
+                      specified condition.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1056,8 +732,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Generators – develop functions that can pause midway and
-                      then continue from where they paused.
+                      <Link href="#">AND operator</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> combine two boolean
+                      expressions and return true if both expressions evaluate
+                      to true.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1065,8 +743,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      yield – dive into how to use the yield keyword in
-                      generators.
+                      <Link href="#">OR operator</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> combine two boolean
+                      expressions and return false if either expression
+                      evaluates to false.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1074,8 +754,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      for…of – learn how to use the for...of loop to iterate
-                      over elements of an iterable object.
+                      <Link href="#">Limit</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> retrieve a subset of
+                      rows generated by a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1083,8 +764,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Asynchronous iterators – learn how to use async iterators
-                      to access asynchronous data sources sequentially.
+                      <Link href="#">Fetch</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> limit the number of
+                      rows returned by a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1092,8 +774,39 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Async generators – show you how to create an async
-                      generator.
+                      <Link href="#">In</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> select data that
+                      matches any value in a list of values.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Between</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> select data that is a
+                      range of values.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Like</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> filter data based on
+                      pattern matching.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Is Null</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> check if a value is
+                      null or not.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1105,7 +818,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 11. Modules
+                  Section 7. Joining Multiple Tables
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1116,7 +829,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Modules – learn how to write modular JavaScript code.
+                      <Link href="#">Joins</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you a brief
+                      overview of <code className="codes">joins</code> in
+                      PostgreSQL.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1124,8 +840,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Export – explain in detail how to export variables,
-                      functions, and classes from a module.
+                      <Link href="#">Table aliases</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> describes how to use{" "}
+                      <code className="codes">table aliases</code> in the query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1133,8 +850,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Import – guide you on how to import default exports and
-                      named exports from another module.
+                      <Link href="#">Inner Join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> select rows from one
+                      table that have the corresponding rows in other tables.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1142,8 +860,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Dynamic import – show you how to import a module
-                      dynamically via the function-like object import().
+                      <Link href="#">Left Join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> select rows from one
+                      table that may or may not have the corresponding rows in
+                      other tables.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1151,8 +871,41 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Top-level await – explain the top-level await module and
-                      its use cases.
+                      <Link href="#">Self-join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> join a table to itself
+                      by comparing a table to itself.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Full Outer Join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> use the full join to
+                      find a row in a table that does not have a matching row in
+                      another table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Cross Join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> produce a Cartesian
+                      product of the rows in two or more tables.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Natural Join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> join two or more tables
+                      using implicit join conditions based on the common column
+                      names in the joined tables.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1164,7 +917,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 12. Symbol
+                  Section 8. Grouping Data
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1175,8 +928,20 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Symbol – introduce you to a new primitive type called
-                      symbol in ES6
+                      <Link href="#">Group By</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> divide rows of a result
+                      set into groups and optionally apply an aggregate function
+                      to each group.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Having</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> apply conditions to
+                      groups, which allow you to filter groups.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1188,7 +953,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 13. Collections
+                  Section 9. Set Operations
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1199,8 +964,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Map – introduce you to the Map type that holds a
-                      collection of key-value pairs.
+                      <Link href="#">Union</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> combine result sets of
+                      multiple queries into a single result set.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1208,8 +974,21 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Set – learn how to use the Set type that holds a
-                      collection of unique values.
+                      <Link href="#">Intersect</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> combine the result sets
+                      of two or more queries and return a single result set
+                      containing rows that appear in both result sets.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Except</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> return the rows from
+                      the first query that do not appear in the output of the
+                      second query.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1221,7 +1000,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 14. Error handling
+                  Section 10. Grouping sets, Cubes, and Rollups
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1232,7 +1011,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      try…catch – show you how to handle exceptions gracefully.
+                      <Link href="#">Grouping Sets</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> generate multiple
+                      grouping sets in reporting.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1240,8 +1021,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      try…catch…finally – learn how to catch exceptions and
-                      execute a block whether the exceptions occur or not.
+                      <Link href="#">Cube</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> define multiple
+                      grouping sets that include all possible combinations of
+                      dimensions.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1249,16 +1032,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      throw – show you how to throw an exception.
-                    </Typography>
-                  </ListItem>
-                  <ListItem sx={{ textAlign: "justify" }}>
-                    <Typography component={"span"}>
-                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                        <FontAwesomeIcon icon={faCircleArrowRight} />
-                      </Typography>{" "}
-                      Optional catch binding – omit the exception variable in
-                      the catch block.
+                      <Link href="#">Rollup</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> generate reports that
+                      contain totals and subtotals.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1270,7 +1046,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 15. JavaScript var, let, and const
+                  Section 11. Subquery
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1281,8 +1057,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      let – declare block-scoped variables using the let
-                      keyword.
+                      <Link href="#">Subquery</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> write a query nested
+                      inside another query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1290,8 +1067,10 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      let vs. var – understand the differences between let and
-                      var.
+                      <Link href="#">Correlated Subquery</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to use a
+                      correlated subquery to perform a query that depends on the
+                      values of the current row being processed.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1299,7 +1078,30 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      const – define constants using the const keyword.
+                      <Link href="#">ANY</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> retrieve data by
+                      comparing a value with a set of values returned by a
+                      subquery.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">ALL</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> query data by comparing
+                      a value with a list of values returned by a subquery.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">EXISTS</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> check for the existence
+                      of rows returned by a subquery.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1311,7 +1113,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 16. Proxy & Reflection
+                  Section 12. Common Table Expressions
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1322,9 +1124,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Proxy – learn how to use the proxy object that wraps
-                      another object (target) and intercepts the fundamental
-                      operations of the target object.
+                      <Link href="#">PostgreSQL CTE</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> introduce you to
+                      PostgreSQL common table expressions or CTEs.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1332,9 +1134,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Reflection – show you how to use ES6 Reflection API to
-                      manipulate variables, properties, and methods of objects
-                      at runtime.
+                      <Link href="#">Recursive query using CTEs</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> discuss the recursive
+                      query and learn how to apply it in various contexts.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1346,7 +1148,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 17. JavaScript Runtime
+                  Section 13. Modifying Data
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1357,8 +1159,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Execution Contexts – understand execution contexts
-                      including global and function execution contexts.
+                      <Link href="#">Insert</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> guide you on how to
+                      insert a single row into a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1366,7 +1169,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Call Stack – understand the call stack.
+                      <Link href="#">Insert multiple rows</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to insert
+                      multiple rows into a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1374,8 +1179,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Event Loop – show you how JavaScript handles asynchronous
-                      operations using the event loop.
+                      <Link href="#">Update</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> update existing data in
+                      a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1383,7 +1189,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Hoisting – learn how hoisting works in JavaScript.
+                      <Link href="#">Update join</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> update values in a
+                      table based on values in another table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1391,7 +1199,29 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Variable scopes – introduce you to the variable scopes.
+                      <Link href="#">Delete</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> delete data in a table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">Upsert</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> insert or update data
+                      if the new row that already exists in the table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">PostgreSQL Transactions</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to handle
+                      transactions in PostgreSQL using BEGIN, COMMIT, and
+                      ROLLBACK statements.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1403,7 +1233,7 @@ const JavaScriptCourse = () => {
                   component={"h1"}
                   sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
                 >
-                  Section 18. Primitive Wrapper Types
+                  Section 14. Import & Export Data
                 </Typography>
                 <List
                   sx={{ textAlign: "justify" }}
@@ -1414,8 +1244,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Primitive wrapper types – learn how primitive wrapper
-                      types work in JavaScript.
+                      <Link href="#">Import CSV file into Table</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to import
+                      CSV file into a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1423,8 +1254,35 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Boolean – introduce you to the Boolean primitive wrapper
-                      type.
+                      <Link href="#">Export PostgreSQL Table to CSV file</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to export
+                      tables to a CSV file.
+                    </Typography>
+                  </ListItem>
+                </List>
+              </Item>
+            </Grid>
+
+            <Grid xs={12}>
+              <Item>
+                <Typography
+                  component={"h1"}
+                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
+                >
+                  Section 15. Conditional Expressions & Operators
+                </Typography>
+                <List
+                  sx={{ textAlign: "justify" }}
+                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
+                >
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href="#">CASE</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you how to form
+                      conditional queries with CASE expression.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1432,7 +1290,9 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      Number – learn about the Number primitive wrapper type.
+                      <Link>COALESCE</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      return the first non-null argument. You can use it to
+                      substitute NULL by a default value.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1440,9 +1300,8 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      BigInt – introduce you to the{" "}
-                      <code className="codes"> BigInt </code> type that
-                      represents the big integers.
+                      <Link>NULLIF</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      return NULL if the first argument equals the second one.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -1450,7 +1309,75 @@ const JavaScriptCourse = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      String type – introduce you to the String type.
+                      <Link>CAST</Link> <FontAwesomeIcon icon={faMinus} />{" "}
+                      convert from one data type into another e.g., from a
+                      string into an integer, from a string into a date.
+                    </Typography>
+                  </ListItem>
+                </List>
+              </Item>
+            </Grid>
+            <Grid xs={12}>
+              <Item>
+                <Typography
+                  component={"h1"}
+                  sx={{ fontWeight: "bold", fontSize: "1.5rem" }}
+                >
+                  Section 16. PostgreSQL Recipes
+                </Typography>
+                <List
+                  sx={{ textAlign: "justify" }}
+                  className="mt-2 text-sm text-gray-600 md:text-base dark:text-gray-600"
+                >
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link>How to compare two tables</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> describe how to compare
+                      data in two tables in a database.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link>How to delete duplicate rows in PostgreSQL</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> show you various ways
+                      to delete duplicate rows from a table.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link>How to generate a random number in a range</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> illustrate how to
+                      generate a random number in a specific range.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link>EXPLAIN statement</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> guide you on how to use
+                      the EXPLAIN statement to return the execution plan of a
+                      query.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link>PostgreSQL vs. MySQL</Link>{" "}
+                      <FontAwesomeIcon icon={faMinus} /> compare PostgreSQL with
+                      MySQL in terms of functionalities.
                     </Typography>
                   </ListItem>
                 </List>
@@ -1463,4 +1390,4 @@ const JavaScriptCourse = () => {
   );
 };
 
-export default JavaScriptCourse;
+export default PostgreSQLTutorial;

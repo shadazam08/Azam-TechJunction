@@ -1,15 +1,11 @@
-// const showNavBar = (isLoggedIn) => {
-//     return (
-//         isLoggedIn && (
-//             // window.location.pathname === '/' ||
-//             // window.location.pathname === '/dashboard/home' ||
-//             // window.location.pathname === '/dashboard/tvshows' ||
-//             // window.location.pathname === '/dashboard/profile' ||
-//             // window.location.pathname === '/dashboard/setpassword'
-//         )
-//     )
-// }
-const showSideBar = () => {
+const showSideBarPG = () => {
+  return (
+    window.location.pathname === "/PostgreSQL" ||
+    window.location.pathname === "/PostgreSQL/What-is-PostgreSQL" ||
+    window.location.pathname === "/PostgreSQL/PostgreSQL-sample-database"
+  );
+};
+const showSideBarJS = () => {
   return (
     window.location.pathname === "/javascript" ||
     window.location.pathname === "/javascript/what-is-javascript" ||
@@ -20,4 +16,4 @@ const showSideBar = () => {
   );
 };
 
-export { showSideBar };
+export { showSideBarJS, showSideBarPG };

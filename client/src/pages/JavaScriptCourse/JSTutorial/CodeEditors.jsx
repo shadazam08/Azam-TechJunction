@@ -2,7 +2,11 @@ import React from "react";
 import { Box, Link, List, ListItem, Toolbar, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck, faDownload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleArrowRight,
+  faCircleCheck,
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import liveServer from "../../../Assets/image/LiveServer.png";
 import AcceptLicenceImage from "../../../Assets/image/Accept-License.png";
@@ -51,72 +55,72 @@ const CodeEditors = () => {
             </Typography>
             <Typography component={"p"} align="justify" sx={{ mt: 2 }}>
               The following are some popular JavaScript code editors:
-              <List>
-                <ListItem components={"li"} sx={{ textAlign: "justify" }}>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      &#x27A4;
-                    </Typography>{" "}
-                    <Link href="https://code.visualstudio.com/" target="_blank">
-                      {" "}
-                      Visual Studio Code
-                    </Link>
-                  </Typography>
-                </ListItem>
-                <ListItem components={"li"} sx={{ textAlign: "justify" }}>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      &#x27A4;
-                    </Typography>{" "}
-                    <Link href="https://atom-editor.cc/" target="_blank">
-                      Atom
-                    </Link>
-                  </Typography>
-                </ListItem>
-                <ListItem components={"li"} sx={{ textAlign: "justify" }}>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      &#x27A4;
-                    </Typography>{" "}
-                    <Link
-                      href="https://notepad-plus-plus.org/downloads/v8.6.7/"
-                      target="_blank"
-                    >
-                      {" "}
-                      Notepad++
-                    </Link>
-                  </Typography>
-                </ListItem>
-                <ListItem components={"li"} sx={{ textAlign: "justify" }}>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      &#x27A4;
-                    </Typography>{" "}
-                    <Link href="https://www.sublimetext.com/" target="_blank">
-                      {" "}
-                      Sublime Text
-                    </Link>
-                  </Typography>
-                </ListItem>
-                <ListItem components={"li"} sx={{ textAlign: "justify" }}>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      &#x27A4;
-                    </Typography>{" "}
-                    <Link
-                      href="https://netbeans.apache.org/front/main/index.html"
-                      target="_blank"
-                    >
-                      {" "}
-                      NetBeans
-                    </Link>
-                  </Typography>
-                </ListItem>
-                <Typography component={"p"} mt={2}>
-                  Note that all these JavaScript editors are free. For our
-                  example, we have chosen to use Visual Studio Code.
+            </Typography>
+            <List>
+              <ListItem sx={{ textAlign: "justify" }}>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleArrowRight} />
+                  </Typography>{" "}
+                  <Link href="https://code.visualstudio.com/" target="_blank">
+                    {" "}
+                    Visual Studio Code
+                  </Link>
                 </Typography>
-              </List>
+              </ListItem>
+              <ListItem sx={{ textAlign: "justify" }}>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleArrowRight} />
+                  </Typography>{" "}
+                  <Link href="https://atom-editor.cc/" target="_blank">
+                    Atom
+                  </Link>
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ textAlign: "justify" }}>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleArrowRight} />
+                  </Typography>{" "}
+                  <Link
+                    href="https://notepad-plus-plus.org/downloads/v8.6.7/"
+                    target="_blank"
+                  >
+                    {" "}
+                    Notepad++
+                  </Link>
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ textAlign: "justify" }}>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleArrowRight} />
+                  </Typography>{" "}
+                  <Link href="https://www.sublimetext.com/" target="_blank">
+                    {" "}
+                    Sublime Text
+                  </Link>
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ textAlign: "justify" }}>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleArrowRight} />
+                  </Typography>{" "}
+                  <Link
+                    href="https://netbeans.apache.org/front/main/index.html"
+                    target="_blank"
+                  >
+                    {" "}
+                    NetBeans
+                  </Link>
+                </Typography>
+              </ListItem>
+            </List>
+            <Typography component={"p"} mt={2}>
+              Note that all these JavaScript editors are free. For our example,
+              we have chosen to use Visual Studio Code.
             </Typography>
           </Box>
           <Box mt={2}>
@@ -134,23 +138,23 @@ const CodeEditors = () => {
               TypeScript, and Node.js, and has a rich ecosystem of extensions
               for other languages and runtimes such as C++, C#, Java, Python,
               PHP, Go, and .NET. Begin your journey with VS Code.
-              <List>
-                <ListItem>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faDownload} />
-                    </Typography>{" "}
-                    <Link
-                      href="https://code.visualstudio.com/download"
-                      target="_blank"
-                    >
-                      {" "}
-                      Download Visual Studio Code
-                    </Link>
-                  </Typography>
-                </ListItem>
-              </List>
             </Typography>
+            <List>
+              <ListItem>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faDownload} />
+                  </Typography>{" "}
+                  <Link
+                    href="https://code.visualstudio.com/download"
+                    target="_blank"
+                  >
+                    {" "}
+                    Download Visual Studio Code
+                  </Link>
+                </Typography>
+              </ListItem>
+            </List>
           </Box>
           <Box mt={2}>
             <Typography
@@ -163,273 +167,272 @@ const CodeEditors = () => {
             <Typography component={"p"} align="justify" sx={{ mt: 2 }}>
               Setting up the Visual Studio Code is easy and quick. It is a small
               download so you can install it in a few minutes.
-              <List>
-                <ListItem>
+            </Typography>
+            <List>
+              <ListItem>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
                   <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      When the download is complete, you'll see the Visual
-                      Studio Code icon in the downloads folder.
+                    {" "}
+                    When the download is complete, you'll see the Visual Studio
+                    Code icon in the downloads folder.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
                       <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
+                        xs={12}
+                        sm={12}
+                        md={3}
+                        sx={{
+                          height: "100%",
+                        }}
                       >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={3}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={vscodeSetupFileImage}
-                            alt="VS Code Setup File"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
+                        {/* <Item> */}
+                        <img
+                          src={vscodeSetupFileImage}
+                          alt="VS Code Setup File"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
                       </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      Double-click the Installer icon to begin installing Visual
-                      Studio Code.
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      After the Installer opens, you will be prompted to accept
-                      the terms and conditions of Visual Studio Code. Click on
-                      'I accept the agreement' and then proceed by clicking the
-                      'Next' button.
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={AcceptLicenceImage}
-                            alt="Accept Licence"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      Choose the location data for running the Visual Studio
-                      Code. It will then ask you to browse the location. Then
-                      click on the Next button.
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={ClickNextImage}
-                            alt="Click Next"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      Then it will ask to begin the installation setup. Click on
-                      the Install button.
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={ClickInstallImage}
-                            alt="Install"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      After clicking on Install, it will take about 1 minute to
-                      install the Visual Studio Code on your device.
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={WaitImage}
-                            alt="Wait"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      After the Installation setup for Visual Studio Code is
-                      finished, it will show a window like this below. Tick the
-                      “Launch Visual Studio Code” checkbox and then click Next.
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={FinishImage}
-                            alt="Final finish"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      After the previous step, the Visual Studio Code window
-                      opens successfully. Now you can create a new file in the
-                      Visual Studio Code window and choose a language of yours
-                      to begin your programming journey!
-                      <Grid
-                        container
-                        justifyContent={"center"}
-                        alignItems={"center"}
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, sm: 1, md: 4 }}
-                        sx={{ marginLeft: 5, marginTop: 3 }}
-                      >
-                        <Grid
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          sx={{
-                            height: "100%",
-                          }}
-                        >
-                          {/* <Item> */}
-                          <img
-                            src={ReadyImage}
-                            alt="Ready"
-                            style={{ width: "100%" }}
-                          />
-                          {/* </Item> */}
-                        </Grid>
-                      </Grid>
-                    </Typography>
-                    <br />
-                    <Typography component={"span"}>
-                      This completes the successful installation of Visual
-                      Studio Code on your Windows system. The steps outlined
-                      above can be applied to any Windows browser for
-                      downloading and installing VS Code on Windows 10. Feel
-                      free to follow these steps to install the VS Code IDE on
-                      your device as well.
-                    </Typography>
+                    </Grid>
                   </Typography>
-                </ListItem>
-              </List>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    Double-click the Installer icon to begin installing Visual
+                    Studio Code.
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    After the Installer opens, you will be prompted to accept
+                    the terms and conditions of Visual Studio Code. Click on 'I
+                    accept the agreement' and then proceed by clicking the
+                    'Next' button.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={AcceptLicenceImage}
+                          alt="Accept Licence"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    Choose the location data for running the Visual Studio Code.
+                    It will then ask you to browse the location. Then click on
+                    the Next button.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={ClickNextImage}
+                          alt="Click Next"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    Then it will ask to begin the installation setup. Click on
+                    the Install button.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={ClickInstallImage}
+                          alt="Install"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    After clicking on Install, it will take about 1 minute to
+                    install the Visual Studio Code on your device.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={WaitImage}
+                          alt="Wait"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    After the Installation setup for Visual Studio Code is
+                    finished, it will show a window like this below. Tick the
+                    “Launch Visual Studio Code” checkbox and then click Next.
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={FinishImage}
+                          alt="Final finish"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    After the previous step, the Visual Studio Code window opens
+                    successfully. Now you can create a new file in the Visual
+                    Studio Code window and choose a language of yours to begin
+                    your programming journey!
+                    <Grid
+                      container
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      rowSpacing={1}
+                      columnSpacing={{ xs: 1, sm: 1, md: 4 }}
+                      sx={{ marginLeft: 5, marginTop: 3 }}
+                    >
+                      <Grid
+                        xs={12}
+                        sm={12}
+                        md={5}
+                        sx={{
+                          height: "100%",
+                        }}
+                      >
+                        {/* <Item> */}
+                        <img
+                          src={ReadyImage}
+                          alt="Ready"
+                          style={{ width: "100%" }}
+                        />
+                        {/* </Item> */}
+                      </Grid>
+                    </Grid>
+                  </Typography>
+                  <br />
+                </Typography>
+              </ListItem>
+            </List>
+            <Typography component={"span"}>
+              This completes the successful installation of Visual Studio Code
+              on your Windows system. The steps outlined above can be applied to
+              any Windows browser for downloading and installing VS Code on
+              Windows 10. Feel free to follow these steps to install the VS Code
+              IDE on your device as well.
             </Typography>
           </Box>
           <Box mt={2}>
@@ -449,75 +452,75 @@ const CodeEditors = () => {
             </Typography>
             <Typography component={"p"} align="justify" sx={{ mt: 2 }}>
               Follow these steps to install the Live Server extension:
-              <List>
-                <ListItem>
-                  <Typography component={"span"}>
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      1<sup>st</sup>, open Visual Studio Code (VS code)
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      2<sup>nd</sup>, click the Extensions.
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      3<sup>rd</sup>, search for the Live Server.
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      4<sup>th</sup>, Next, locate and select the Live Server
-                      extension from the list.
-                    </Typography>
-                    <br />
-                    <Typography component={"span"} sx={{ color: "#4A148C" }}>
-                      <FontAwesomeIcon icon={faCircleCheck} />
-                    </Typography>{" "}
-                    <Typography component={"span"}>
-                      {" "}
-                      5<sup>th</sup>, Lastly, click on the 'Install' button to
-                      complete the process..
-                    </Typography>
-                  </Typography>
-                </ListItem>
-                <Grid
-                  container
-                  rowSpacing={1}
-                  columnSpacing={{ xs: 1, sm: 1, md: 1 }}
-                  sx={{ marginLeft: 5, marginRight: 5, marginTop: 5 }}
-                >
-                  <Grid
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    sx={{ height: "100%", width: "100%" }}
-                  >
-                    {/* <Item> */}
-                    <img
-                      src={liveServer}
-                      alt="Install LiveServer"
-                      style={{ width: "100%", marginBottom: "0.5rem" }}
-                    />
-                    {/* </Item> */}
-                  </Grid>
-                </Grid>
-              </List>
             </Typography>
+            <List>
+              <ListItem>
+                <Typography component={"span"}>
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    1<sup>st</sup>, open Visual Studio Code (VS code)
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    2<sup>nd</sup>, click the Extensions.
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    3<sup>rd</sup>, search for the Live Server.
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    4<sup>th</sup>, Next, locate and select the Live Server
+                    extension from the list.
+                  </Typography>
+                  <br />
+                  <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                  </Typography>{" "}
+                  <Typography component={"span"}>
+                    {" "}
+                    5<sup>th</sup>, Lastly, click on the 'Install' button to
+                    complete the process..
+                  </Typography>
+                </Typography>
+              </ListItem>
+              <Grid
+                container
+                rowSpacing={1}
+                columnSpacing={{ xs: 1, sm: 1, md: 1 }}
+                sx={{ marginLeft: 5, marginRight: 5, marginTop: 5 }}
+              >
+                <Grid
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  sx={{ height: "100%", width: "100%" }}
+                >
+                  {/* <Item> */}
+                  <img
+                    src={liveServer}
+                    alt="Install LiveServer"
+                    style={{ width: "100%", marginBottom: "0.5rem" }}
+                  />
+                  {/* </Item> */}
+                </Grid>
+              </Grid>
+            </List>
           </Box>
         </Box>
       </Box>

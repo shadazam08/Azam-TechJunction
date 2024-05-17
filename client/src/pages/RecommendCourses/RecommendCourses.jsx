@@ -4,7 +4,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { purple } from "@mui/material/colors";
 import ReactjsTutorial from "../../Assets/image/ReactjsTutorial.gif";
 import JavaScriptTutorial from "../../Assets/image/JavaScriptTutorial.gif";
-import DSATutorial from "../../Assets/image/DSATutorial.gif";
+import PostgreSQLTutorial from "../../Assets/image/PostgreSQL.gif";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -13,15 +13,15 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const RecommendCourses = () => {
-  const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(purple[500]),
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[700],
+  "&:hover": {
     backgroundColor: purple[700],
-    "&:hover": {
-      backgroundColor: purple[700],
-    },
-  }));
+  },
+}));
 
+const RecommendCourses = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <div className="text-center mt-6 text-3xl font-bold text-gray-800 md:text-4xl mb-3">
@@ -33,37 +33,56 @@ const RecommendCourses = () => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{ marginLeft: 5, marginRight: 5, marginTop: 5 }}
       >
-        <Grid xs={12} sm={6} md={4} sx={{ height: "100%" }}>
+        <Grid
+          xs={12}
+          sm={6}
+          md={4}
+          sx={{ height: "100%", textAlign: "justify" }}
+        >
           <Item>
             <img
-              src={DSATutorial}
-              alt="DSA JAVA Tutorials For Beginners "
-              style={{ width: "100%", marginBottom: "0.5rem" }}
+              src={PostgreSQLTutorial}
+              alt="PostgreSQL Tutorials "
+              style={{ width: "100%", marginBottom: "1em" }}
             />
-            <Typography
+            {/* <Typography
               gutterBottom
               variant="subtitle1"
               component="p"
               sx={{ fontWeight: 400 }}
             >
               FREE COURSE
+            </Typography> */}
+            <Typography
+              component={"h4"}
+              sx={{
+                fontWeight: "bold",
+                fontSize: "1.5em",
+                color: "#000",
+                textAlign: "justify",
+              }}
+            >
+              PostgreSQL Tutorials For Beginners
             </Typography>
             <Typography
-              gutterBottom
-              variant="subtitle1"
-              component={"h4"}
-              sx={{ fontWeight: 500 }}
+              component={"p"}
+              sx={{
+                fontSize: "14px",
+                color: "#4D4D4D",
+                textAlign: "justify",
+                marginTop: "1em",
+              }}
             >
-              DSA JAVA Tutorials For Beginners
-            </Typography>
-            <Typography component={"p"} sx={{ fontSize: "14px" }}>
-              Get started with Data Structures and Algorithms (DSA) in Java with
-              our comprehensive beginner-friendly tutorials. Master the
-              fundamental concepts of DSA, including arrays, linked lists,
-              stacks, queues, trees, graphs, sorting, searching, and more.
+              Explore beginner-friendly PostgreSQL tutorials covering essential
+              topics. Learn database management fundamentals, SQL querying, data
+              manipulation, and more. Master PostgreSQL installation,
+              configuration, and basic commands. Elevate your skills and become
+              proficient in working with PostgreSQL databases.
             </Typography>
             <div className="flex justify-center lg:justify-start mt-6">
-              <ColorButton variant="contained">Free Courses</ColorButton>
+              <ColorButton variant="contained" href="/PostgreSQL">
+                Free Courses
+              </ColorButton>
             </div>
           </Item>
         </Grid>
@@ -72,29 +91,41 @@ const RecommendCourses = () => {
             <img
               src={JavaScriptTutorial}
               alt="JavaScript Tutorial for Beginners"
-              style={{ width: "100%", marginBottom: "0.5rem" }}
+              style={{ width: "100%", marginBottom: "1em" }}
             />
-            <Typography
+            {/* <Typography
               gutterBottom
               variant="subtitle1"
               component="p"
               sx={{ fontWeight: 400 }}
             >
               FREE COURSE
-            </Typography>
+            </Typography> */}
             <Typography
-              gutterBottom
-              variant="subtitle1"
               component={"h4"}
-              sx={{ fontWeight: 500 }}
+              sx={{
+                fontWeight: "bold",
+                fontSize: "1.5em",
+                color: "#000",
+                textAlign: "justify",
+              }}
             >
               JavaScript Tutorials For Beginners
             </Typography>
-            <Typography component={"p"} sx={{ fontSize: "14px" }}>
-              Embark on your journey into the world of web development with our
-              JavaScript tutorials designed for beginners. Learn the
-              fundamentals of JavaScript programming, including variables, data
-              types, control structures, functions, and objects.
+            <Typography
+              component={"p"}
+              sx={{
+                fontSize: "14px",
+                color: "#4D4D4D",
+                textAlign: "justify",
+                marginTop: "1em",
+              }}
+            >
+              Begin your web development journey with our beginner-friendly
+              JavaScript tutorials. Master the essentials of JavaScript
+              programming, covering variables, data types, control structures,
+              functions, and objects. Get ready to dive into the world of coding
+              and build your first JavaScript projects from scratch.
             </Typography>
             <div className="flex justify-center lg:justify-start mt-6">
               <ColorButton variant="contained" href="/javascript">
@@ -108,29 +139,41 @@ const RecommendCourses = () => {
             <img
               src={ReactjsTutorial}
               alt="React JS Tutorials For Beginners"
-              style={{ width: "100%", marginBottom: "0.5rem" }}
+              style={{ width: "100%", marginBottom: "1em" }}
             />
-            <Typography
+            {/* <Typography
               gutterBottom
               variant="subtitle1"
               component="p"
               sx={{ fontWeight: 400 }}
             >
               FREE COURSE
-            </Typography>
+            </Typography> */}
             <Typography
-              gutterBottom
-              variant="subtitle1"
               component={"h4"}
-              sx={{ fontWeight: 500 }}
+              sx={{
+                fontWeight: "bold",
+                fontSize: "1.5em",
+                color: "#000",
+                textAlign: "justify",
+              }}
             >
               React JS Tutorials For Beginners
             </Typography>
-            <Typography component={"p"} sx={{ fontSize: "14px" }}>
-              Jumpstart your front-end development journey with our React JS
-              tutorials tailored for beginners. Discover the core concepts of
-              React, including components, JSX syntax, state management, and
-              props. Learn how to build reusable UI components and more...
+            <Typography
+              component={"p"}
+              sx={{
+                fontSize: "14px",
+                color: "#4D4D4D",
+                textAlign: "justify",
+                marginTop: "1em",
+              }}
+            >
+              Kickstart your front-end development journey with our
+              beginner-friendly React JS tutorials. Explore the fundamental
+              concepts of React, such as components, JSX syntax, state
+              management, and props. Discover how to create reusable UI
+              components and much more....
             </Typography>
             <div className="flex justify-center lg:justify-start mt-6">
               <ColorButton variant="contained">Free Courses</ColorButton>
