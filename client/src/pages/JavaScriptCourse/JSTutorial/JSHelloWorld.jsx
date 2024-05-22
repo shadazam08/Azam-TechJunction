@@ -66,7 +66,7 @@ const JSHelloWorld = () => {
             purposes.
           </Typography>
           <Typography paragraph sx={{ mt: 2 }} align="justify">
-            The JavaScript code in the <code>{"<script>"}</code> element is
+            The JavaScript code in the <code className="codes">{"<script>"}</code> element is
             interpreted from top to bottom. For example:
             <Grid container spacing={2} sx={{ mt: 2, padding: "0.2em" }}>
               <Grid xs={12}>

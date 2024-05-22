@@ -27,21 +27,21 @@ const PGRightSideBar = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="#">
+              <Link href="/PostgreSQL/Install-PostgreSQL">
                 <Typography component={"span"}>
                   Install PostgreSQL on Windows
                 </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/javascript/js-hello-world">
+              <Link href="/PostgreSQL/connect-to-postgresql">
                 <Typography component={"span"}>
                   Connect to PostgreSQL database server
                 </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/javascript/js-hello-world">
+              <Link href="/PostgreSQL/Load-Sample-Database">
                 <Typography component={"span"}>
                   Load Sample Database into PostgreSQL Server
                 </Typography>

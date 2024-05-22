@@ -149,7 +149,9 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Install PostgreSQL on Windows </Link>{" "}
+                      <Link href="/PostgreSQL/Install-PostgreSQL">
+                        Install PostgreSQL on Windows{" "}
+                      </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} />
                       walk you through the steps of how to install PostgreSQL on
                       Windows.
@@ -160,7 +162,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">
+                      <Link href="/PostgreSQL/connect-to-postgresql">
                         Connect to PostgreSQL database server{" "}
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> show you how to connect
@@ -172,7 +174,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">
+                      <Link href="/PostgreSQL/Load-Sample-Database">
                         Load Sample Database into PostgreSQL Server
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> guide you on how to

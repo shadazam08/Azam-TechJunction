@@ -640,6 +640,10 @@ video {
   justify-content: center;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -712,6 +716,10 @@ video {
 
 .opacity-25 {
   opacity: 0.25;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .filter {
