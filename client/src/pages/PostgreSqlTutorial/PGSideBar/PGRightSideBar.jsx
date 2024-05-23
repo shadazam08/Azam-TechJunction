@@ -59,7 +59,7 @@ const PGRightSideBar = () => {
           </Typography>
           <List>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/PostgreSQL-SELECT"}>
                 <Typography component={"span"}>Select</Typography>
               </Link>
             </ListItem>

@@ -25,6 +25,7 @@ import SampleDatabase from "../PostgreSqlTutorial/PGTutorials/SampleDatabase";
 import InstallPostgreSQL from "../PostgreSqlTutorial/PGTutorials/InstallPostgreSQL";
 import ConnectPostgreSQL from "../PostgreSqlTutorial/PGTutorials/ConnectPostgreSQL";
 import LoadDatabase from "../PostgreSqlTutorial/PGTutorials/LoadDatabase";
+import PostgreSQLSELECT from "../PostgreSqlTutorial/PGTutorials/PostgreSQLSELECT";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -62,6 +63,10 @@ const Routes = () => {
         <Route
           path="/PostgreSQL/Load-Sample-Database"
           element={<LoadDatabase />}
+        />
+        <Route
+          path="/PostgreSQL/PostgreSQL-SELECT"
+          element={<PostgreSQLSELECT />}
         />
       </>
     )

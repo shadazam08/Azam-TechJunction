@@ -12,7 +12,7 @@ import {
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import ERModelDiagram from "../../../Assets/image/ERModel.png";
-import dvdrental from "../../../Assets/files/dvdrental.sql";
+import dvdrental from "../../../Assets/files/dvdrental.zip";
 import printableSampleERDiagram from "../../../Assets/document/printableSampleERDiagram.pdf";
 
 const SampleDatabase = () => {

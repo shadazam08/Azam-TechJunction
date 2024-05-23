@@ -202,7 +202,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Select</Link>{" "}
+                      <Link href="/PostgreSQL/PostgreSQL-SELECT">Select</Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> show you how to query
                       data from a single table.
                     </Typography>

@@ -604,6 +604,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -638,10 +642,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .bg-black {
@@ -688,6 +688,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .capitalize {

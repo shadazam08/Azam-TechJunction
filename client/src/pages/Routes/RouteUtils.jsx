@@ -5,7 +5,8 @@ const showSideBarPG = () => {
     window.location.pathname === "/PostgreSQL/PostgreSQL-sample-database" ||
     window.location.pathname === "/PostgreSQL/Install-PostgreSQL" ||
     window.location.pathname === "/PostgreSQL/connect-to-postgresql" ||
-    window.location.pathname === "/PostgreSQL/Load-Sample-Database"
+    window.location.pathname === "/PostgreSQL/Load-Sample-Database" ||
+    window.location.pathname === "/PostgreSQL/PostgreSQL-SELECT"
   );
 };
 const showSideBarJS = () => {
