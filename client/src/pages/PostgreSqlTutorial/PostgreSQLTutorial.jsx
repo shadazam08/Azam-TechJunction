@@ -123,7 +123,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/What-is-PostgreSQL">
+                      <Link href="/PostgreSQL/what-is-postgreSql">
                         What is PostgreSQL
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> introduce you to
@@ -135,7 +135,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/PostgreSQL-sample-database">
+                      <Link href="/PostgreSQL/postgreSQL-sample-database">
                         Introduction to PostgreSQL sample database
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> to learn the PostgreSQL
@@ -149,7 +149,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/Install-PostgreSQL">
+                      <Link href="/PostgreSQL/install-postgreSQL">
                         Install PostgreSQL on Windows{" "}
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} />
@@ -162,7 +162,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/connect-to-postgresql">
+                      <Link href="/PostgreSQL/connect-to-postgreSQL">
                         Connect to PostgreSQL database server{" "}
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> show you how to connect
@@ -174,7 +174,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/Load-Sample-Database">
+                      <Link href="/PostgreSQL/load-sample-database">
                         Load Sample Database into PostgreSQL Server
                       </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> guide you on how to
@@ -202,7 +202,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="/PostgreSQL/PostgreSQL-SELECT">Select</Link>{" "}
+                      <Link href="/PostgreSQL/postgreSQL-select">Select</Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> show you how to query
                       data from a single table.
                     </Typography>
@@ -212,7 +212,9 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Column aliases</Link>{" "}
+                      <Link href="/PostgreSQL/postgreSQL-column-alias">
+                        Column aliases
+                      </Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> learn how to assign
                       temporary names to columns or expressions within a query.
                     </Typography>
@@ -222,7 +224,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Order By</Link>{" "}
+                      <Link href="/PostgreSQL/order-by">Order By</Link>{" "}
                       <FontAwesomeIcon icon={faMinus} /> guide you on how to
                       sort the result set returned by a query.
                     </Typography>

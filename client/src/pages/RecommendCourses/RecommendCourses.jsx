@@ -80,7 +80,7 @@ const RecommendCourses = () => {
               proficient in working with PostgreSQL databases.
             </Typography>
             <div className="flex justify-center lg:justify-start mt-6">
-              <ColorButton variant="contained" href="/PostgreSQL">
+              <ColorButton variant="contained" href="/postgreSQL">
                 Free Courses
               </ColorButton>
             </div>

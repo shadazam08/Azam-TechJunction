@@ -1,12 +1,14 @@
 const showSideBarPG = () => {
   return (
-    window.location.pathname === "/PostgreSQL" ||
-    window.location.pathname === "/PostgreSQL/What-is-PostgreSQL" ||
-    window.location.pathname === "/PostgreSQL/PostgreSQL-sample-database" ||
-    window.location.pathname === "/PostgreSQL/Install-PostgreSQL" ||
-    window.location.pathname === "/PostgreSQL/connect-to-postgresql" ||
-    window.location.pathname === "/PostgreSQL/Load-Sample-Database" ||
-    window.location.pathname === "/PostgreSQL/PostgreSQL-SELECT"
+    window.location.pathname === "/postgreSQL" ||
+    window.location.pathname === "/PostgreSQL/what-is-postgreSql" ||
+    window.location.pathname === "/PostgreSQL/postgreSQL-sample-database" ||
+    window.location.pathname === "/PostgreSQL/install-postgreSQL" ||
+    window.location.pathname === "/PostgreSQL/connect-to-postgreSQL" ||
+    window.location.pathname === "/PostgreSQL/load-sample-database" ||
+    window.location.pathname === "/PostgreSQL/postgreSQL-select" ||
+    window.location.pathname === "/PostgreSQL/postgreSQL-column-alias" ||
+    window.location.pathname === "/PostgreSQL/order-by"
   );
 };
 const showSideBarJS = () => {

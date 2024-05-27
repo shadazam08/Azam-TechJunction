@@ -26,6 +26,8 @@ import InstallPostgreSQL from "../PostgreSqlTutorial/PGTutorials/InstallPostgreS
 import ConnectPostgreSQL from "../PostgreSqlTutorial/PGTutorials/ConnectPostgreSQL";
 import LoadDatabase from "../PostgreSqlTutorial/PGTutorials/LoadDatabase";
 import PostgreSQLSELECT from "../PostgreSqlTutorial/PGTutorials/PostgreSQLSELECT";
+import ColumnAlias from "../PostgreSqlTutorial/PGTutorials/ColumnAlias";
+import OrderBy from "../PostgreSqlTutorial/PGTutorials/OrderBy";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -43,30 +45,38 @@ const Routes = () => {
         />
         <Route path="/javascript/code-editors" element={<CodeEditors />} />
         <Route path="/javascript/js-hello-world" element={<JSHelloWorld />} />
-        <Route path="/PostgreSQL" element={<PostgreSQLTutorial />} />
+        <Route path="/postgreSQL" element={<PostgreSQLTutorial />} />
         <Route
-          path="/PostgreSQL/What-is-PostgreSQL"
+          path="/PostgreSQL/what-is-postgreSql"
           element={<WhatPostgreSQL />}
         />
         <Route
-          path="/PostgreSQL/PostgreSQL-sample-database"
+          path="/PostgreSQL/postgreSQL-sample-database"
           element={<SampleDatabase />}
         />
         <Route
-          path="/PostgreSQL/Install-PostgreSQL"
+          path="/PostgreSQL/install-postgreSQL"
           element={<InstallPostgreSQL />}
         />
         <Route
-          path="/PostgreSQL/connect-to-postgresql"
+          path="/PostgreSQL/connect-to-postgreSQL"
           element={<ConnectPostgreSQL />}
         />
         <Route
-          path="/PostgreSQL/Load-Sample-Database"
+          path="/PostgreSQL/load-sample-database"
           element={<LoadDatabase />}
         />
         <Route
-          path="/PostgreSQL/PostgreSQL-SELECT"
+          path="/PostgreSQL/postgreSQL-select"
           element={<PostgreSQLSELECT />}
+        />
+        <Route
+          path="/PostgreSQL/postgreSQL-column-alias"
+          element={<ColumnAlias />}
+        />
+        <Route
+          path="/PostgreSQL/order-by"
+          element={<OrderBy />}
         />
       </>
     )

@@ -15,33 +15,33 @@ const PGRightSideBar = () => {
           </Typography>
           <List>
             <ListItem>
-              <Link href={"/PostgreSQL/What-is-PostgreSQL"}>
+              <Link href={"/PostgreSQL/what-is-postgreSql"}>
                 <Typography component={"span"}>What is PostgreSQL </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/PostgreSQL/PostgreSQL-sample-database">
+              <Link href="/PostgreSQL/postgreSQL-sample-database">
                 <Typography component={"span"}>
                   Introduction to PostgreSQL sample database
                 </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/PostgreSQL/Install-PostgreSQL">
+              <Link href="/PostgreSQL/install-postgreSQL">
                 <Typography component={"span"}>
                   Install PostgreSQL on Windows
                 </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/PostgreSQL/connect-to-postgresql">
+              <Link href="/PostgreSQL/connect-to-postgreSQL">
                 <Typography component={"span"}>
                   Connect to PostgreSQL database server
                 </Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="/PostgreSQL/Load-Sample-Database">
+              <Link href="/PostgreSQL/load-sample-database">
                 <Typography component={"span"}>
                   Load Sample Database into PostgreSQL Server
                 </Typography>
@@ -59,17 +59,17 @@ const PGRightSideBar = () => {
           </Typography>
           <List>
             <ListItem>
-              <Link href={"/PostgreSQL/PostgreSQL-SELECT"}>
+              <Link href={"/PostgreSQL/postgreSQL-select"}>
                 <Typography component={"span"}>Select</Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/postgreSQL-column-alias"}>
                 <Typography component={"span"}>Column aliases</Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/order-by"}>
                 <Typography component={"span"}>Order By</Typography>
               </Link>
             </ListItem>
