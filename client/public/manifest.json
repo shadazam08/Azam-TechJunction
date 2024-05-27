@@ -3,12 +3,12 @@
   "name": "Azam Tech Junction",
   "icons": [
     {
-      "src": "faviconA.ico",
+      "src": "fav.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "appleTouch.png",
+      "src": "appleTouchA_196x196.png",
       "type": "image/png",
       "sizes": "196x196"
     }

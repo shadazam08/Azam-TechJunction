@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import Courses from "../Courses/Courses";
-import Tutorial from "../Tutorial/Tutorial";
+// import Tutorial from "../Tutorial/Tutorial";
 import Notes from "../Notes/Notes";
 import Contact from "../Contact/Contact";
 // import Footer from "../Footer/Footer";
@@ -28,6 +28,8 @@ import LoadDatabase from "../PostgreSqlTutorial/PGTutorials/LoadDatabase";
 import PostgreSQLSELECT from "../PostgreSqlTutorial/PGTutorials/PostgreSQLSELECT";
 import ColumnAlias from "../PostgreSqlTutorial/PGTutorials/ColumnAlias";
 import OrderBy from "../PostgreSqlTutorial/PGTutorials/OrderBy";
+import Login from "../Auth/Login";
+import Register from "../Auth/Register";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -35,10 +37,13 @@ const Routes = () => {
       <>
         <Route path="/" element={<DashBoard />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/tutorial" element={<Tutorial />} />
+        {/* <Route path="/tutorial" element={<Tutorial />} /> */}
         <Route path="/notes" element={<Notes />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/javascript" element={<JavaScriptCourse />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Register />} />
+
         <Route
           path="/javascript/what-is-javascript"
           element={<WhatisJavaScript />}
@@ -74,10 +79,7 @@ const Routes = () => {
           path="/PostgreSQL/postgreSQL-column-alias"
           element={<ColumnAlias />}
         />
-        <Route
-          path="/PostgreSQL/order-by"
-          element={<OrderBy />}
-        />
+        <Route path="/PostgreSQL/order-by" element={<OrderBy />} />
       </>
     )
   );

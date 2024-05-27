@@ -20,11 +20,11 @@ const drawerWidth = 150;
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Courses", path: "/courses" },
-  { label: "Tutorial", path: "/tutorial" },
+  // { label: "Tutorial", path: "/tutorial" },
   { label: "Notes", path: "/notes" },
   { label: "Contact", path: "/contact" },
-  // { label: 'Login', path: '/login' },
-  // { label: 'Signup', path: '/signup' }
+  { label: 'Login', path: '/login' },
+  { label: 'Signup', path: '/signup' }
 ];
 
 const NavBar = (props) => {
