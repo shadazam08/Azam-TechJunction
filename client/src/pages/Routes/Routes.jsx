@@ -9,7 +9,7 @@ import Contact from "../Contact/Contact";
 // import Footer from "../Footer/Footer";
 import JavaScriptCourse from "../JavaScriptCourse/JavaScriptCourse";
 import RightSideBar from "../JavaScriptCourse/RightSideBar/RightSideBar";
-import { notShowNavBar, showNavbar, showSideBarJS, showSideBarPG } from "./RouteUtils";
+import { notShowNavBar, showSideBarJS, showSideBarPG } from "./RouteUtils";
 import WhatisJavaScript from "../JavaScriptCourse/JSTutorial/WhatisJavaScript";
 import CodeEditors from "../JavaScriptCourse/JSTutorial/CodeEditors";
 import JSHelloWorld from "../JavaScriptCourse/JSTutorial/JSHelloWorld";
@@ -59,12 +59,10 @@ const Routes = () => {
     ),
   );
   // Determine if navbar should be shown based on current path
-  // const shouldShowNavBar = !showSideBarJS() && !showSideBarPG();
   const shouldShowNavBar = !notShowNavBar();
   return (
     <>
       {/* <NavBar /> */}
-      {/* {!notShowNavBar && <NavBar />} */}
       {shouldShowNavBar && <NavBar />}
       <RouterProvider router={router} />
       {showSideBarJS() && <RightSideBar />}
