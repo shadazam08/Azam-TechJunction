@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .codes {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   color: #4a148c !important;
   background-color: #f5f5f5 !important;
 }
 
 .changeWidth {
   // display: flex;
-  width: calc(100% - 300px);
+  width: calc(100% - 320px);
+  // border-left: 1px solid #ddd;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
 
   @media (max-width: 600px) {
     width: 100%; // Hide on small screens (less than 600px width)

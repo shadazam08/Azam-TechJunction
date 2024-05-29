@@ -7,10 +7,7 @@ const PGRightSideBar = () => {
       <Toolbar />
       <Box sx={{ p: 3 }}>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             GETTING STARTED
           </Typography>
           <List>
@@ -21,40 +18,29 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href="/PostgreSQL/postgreSQL-sample-database">
-                <Typography component={"span"}>
-                  Introduction to PostgreSQL sample database
-                </Typography>
+                <Typography component={"span"}>Introduction to PostgreSQL sample database</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="/PostgreSQL/install-postgreSQL">
-                <Typography component={"span"}>
-                  Install PostgreSQL on Windows
-                </Typography>
+                <Typography component={"span"}>Install PostgreSQL on Windows</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="/PostgreSQL/connect-to-postgreSQL">
-                <Typography component={"span"}>
-                  Connect to PostgreSQL database server
-                </Typography>
+                <Typography component={"span"}>Connect to PostgreSQL database server</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="/PostgreSQL/load-sample-database">
-                <Typography component={"span"}>
-                  Load Sample Database into PostgreSQL Server
-                </Typography>
+                <Typography component={"span"}>Load Sample Database into PostgreSQL Server</Typography>
               </Link>
             </ListItem>
           </List>
         </Typography>
 
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Querying Data
           </Typography>
           <List>
@@ -74,22 +60,19 @@ const PGRightSideBar = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/select-distinct"}>
                 <Typography component={"span"}>Select Distinct</Typography>
               </Link>
             </ListItem>
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Managing Tables
           </Typography>
           <List>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/data-types"}>
                 <Typography component={"span"}>Data types</Typography>
               </Link>
             </ListItem>
@@ -100,16 +83,12 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Select Into & Create table
-                </Typography>
+                <Typography component={"span"}>Select Into & Create table</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Auto-increment column with SERIAL
-                </Typography>
+                <Typography component={"span"}>Auto-increment column with SERIAL</Typography>
               </Link>
             </ListItem>
             <ListItem>
@@ -144,9 +123,7 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Change column data type
-                </Typography>
+                <Typography component={"span"}>Change column data type</Typography>
               </Link>
             </ListItem>
             <ListItem>
@@ -177,10 +154,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             PostgreSQL Constraints
           </Typography>
           <List>
@@ -222,10 +196,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             PostgreSQL Data Types in Depth
           </Typography>
           <List>
@@ -236,9 +207,7 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  CHAR, VARCHAR, and TEXT
-                </Typography>
+                <Typography component={"span"}>CHAR, VARCHAR, and TEXT</Typography>
               </Link>
             </ListItem>
             <ListItem>
@@ -303,9 +272,7 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  User-defined data types
-                </Typography>
+                <Typography component={"span"}>User-defined data types</Typography>
               </Link>
             </ListItem>
             <ListItem>
@@ -331,10 +298,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Filtering Data
           </Typography>
           <List>
@@ -386,10 +350,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Joining Multiple Tables
           </Typography>
           <List>
@@ -436,10 +397,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Grouping Data
           </Typography>
           <List>
@@ -456,10 +414,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Set Operations
           </Typography>
           <List>
@@ -481,10 +436,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Grouping sets, Cubes, and Rollups
           </Typography>
           <List>
@@ -506,10 +458,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Subquery
           </Typography>
           <List>
@@ -541,10 +490,7 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Common Table Expressions
           </Typography>
           <List>
@@ -555,18 +501,13 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Recursive query using CTEs
-                </Typography>
+                <Typography component={"span"}>Recursive query using CTEs</Typography>
               </Link>
             </ListItem>
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Modifying Data
           </Typography>
           <List>
@@ -602,42 +543,30 @@ const PGRightSideBar = () => {
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  PostgreSQL Transactions
-                </Typography>
+                <Typography component={"span"}>PostgreSQL Transactions</Typography>
               </Link>
             </ListItem>
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Import & Export Data
           </Typography>
           <List>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Import CSV file into Table
-                </Typography>
+                <Typography component={"span"}>Import CSV file into Table</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  Export PostgreSQL Table to CSV file
-                </Typography>
+                <Typography component={"span"}>Export PostgreSQL Table to CSV file</Typography>
               </Link>
             </ListItem>
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             Conditional Expressions & Operators
           </Typography>
           <List>
@@ -664,32 +593,23 @@ const PGRightSideBar = () => {
           </List>
         </Typography>
         <Typography>
-          <Typography
-            component={"p"}
-            sx={{ fontSize: "1rem", fontWeight: "bold" }}
-          >
+          <Typography component={"p"} sx={{ fontSize: "1rem", fontWeight: "bold" }}>
             PostgreSQL Recipes
           </Typography>
           <List>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  How to compare two tables
-                </Typography>
+                <Typography component={"span"}>How to compare two tables</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  How to delete duplicate rows in PostgreSQL
-                </Typography>
+                <Typography component={"span"}>How to delete duplicate rows in PostgreSQL</Typography>
               </Link>
             </ListItem>
             <ListItem>
               <Link href={"#"}>
-                <Typography component={"span"}>
-                  How to generate a random number in a range
-                </Typography>
+                <Typography component={"span"}>How to generate a random number in a range</Typography>
               </Link>
             </ListItem>
             <ListItem>
