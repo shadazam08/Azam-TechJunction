@@ -77,7 +77,7 @@ const PGRightSideBar = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
+              <Link href={"/PostgreSQL/create-table"}>
                 <Typography component={"span"}>Create a table</Typography>
               </Link>
             </ListItem>

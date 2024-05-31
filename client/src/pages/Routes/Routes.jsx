@@ -27,6 +27,7 @@ import Login from "../Auth/Login";
 import Register from "../Auth/Register";
 import SelectDistinct from "../PostgreSqlTutorial/PGTutorials/SelectDistinct";
 import DataTypes from "../PostgreSqlTutorial/PGTutorials/DataTypes";
+import CreateTable from "../PostgreSqlTutorial/PGTutorials/CreateTable";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -55,6 +56,7 @@ const Routes = () => {
         <Route path="/PostgreSQL/order-by" element={<OrderBy />} />
         <Route path="/PostgreSQL/select-distinct" element={<SelectDistinct />} />
         <Route path="/PostgreSQL/data-types" element={<DataTypes />} />
+        <Route path="/PostgreSQL/create-table" element={<CreateTable />} />
       </>,
     ),
   );

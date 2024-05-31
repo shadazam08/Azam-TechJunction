@@ -196,7 +196,7 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Create a table</Link> <FontAwesomeIcon icon={faMinus} /> guide you on how to create a new table in the database.
+                      <Link href={'/PostgreSQL/create-table'}>Create a table</Link> <FontAwesomeIcon icon={faMinus} /> guide you on how to create a new table in the database.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>

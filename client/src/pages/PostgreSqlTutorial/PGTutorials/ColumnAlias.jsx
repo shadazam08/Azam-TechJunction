@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Link, List, ListItem, Toolbar, Typography } from "@mui/material";
+import { Box, Link, Toolbar, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
