@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan+SC&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Wotfard", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.withline {
+  position: relative;
+}
+.withline :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust the distance from the text */
+  width: 2px; /* Width of the line */
+  height: 100%; /* Height of the line (extends to the full height of the text) */
+  background-color: #4a148c; /* Color of the line */
+}/*# sourceMappingURL=index.css.map */

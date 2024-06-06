@@ -1,0 +1,14 @@
+.withline {
+  position: relative;
+  text-align: justify;
+}
+.withline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -6.9px; /* Adjust the distance from the text */
+  width: 3px; /* Width of the line */
+  height: 100%; /* Height of the line (extends to the full height of the text) */
+  background-color: #4A148C; /* Color of the line */
+}/*# sourceMappingURL=js.css.map */

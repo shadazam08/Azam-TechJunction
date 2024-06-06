@@ -1,0 +1,19 @@
+.rightside {
+  width: 320px;
+  padding: 10px;
+  border-left: 1px solid #ddd;
+  position: absolute;
+  top: 0; /* Position at the top */
+  right: 0; /* Position at the right */
+}
+@media (max-width: 600px) {
+  .rightside {
+    display: none;
+  }
+}
+.rightside a {
+  text-decoration: none;
+}
+.rightside a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=rightsidebar.css.map */

@@ -196,7 +196,8 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href={'/PostgreSQL/create-table'}>Create a table</Link> <FontAwesomeIcon icon={faMinus} /> guide you on how to create a new table in the database.
+                      <Link href={"/PostgreSQL/create-table"}>Create a table</Link> <FontAwesomeIcon icon={faMinus} /> guide you on how to create a
+                      new table in the database.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -204,8 +205,8 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Select Into & Create table </Link> <FontAwesomeIcon icon={faMinus} /> as shows you how to create a new table from
-                      the result set of a query.
+                      <Link href={"/PostgreSQL/select-into"}>Select Into </Link> <FontAwesomeIcon icon={faMinus} /> as shows you how to create a new
+                      table from the result set of a query.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>
@@ -213,8 +214,17 @@ const PostgreSQLTutorial = () => {
                       <Typography component={"span"} sx={{ color: "#4A148C" }}>
                         <FontAwesomeIcon icon={faCircleArrowRight} />
                       </Typography>{" "}
-                      <Link href="#">Auto-increment column with SERIAL</Link> <FontAwesomeIcon icon={faMinus} /> uses SERIAL to add an auto-increment
-                      column to a table.
+                      <Link href={"/PostgreSQL/create-table-as"}>Create table as </Link> <FontAwesomeIcon icon={faMinus} />
+                      shows you how to create a new table from the result set of a query.
+                    </Typography>
+                  </ListItem>
+                  <ListItem sx={{ textAlign: "justify" }}>
+                    <Typography component={"span"}>
+                      <Typography component={"span"} sx={{ color: "#4A148C" }}>
+                        <FontAwesomeIcon icon={faCircleArrowRight} />
+                      </Typography>{" "}
+                      <Link href={"/PostgreSQL/serial"}>Auto-increment column with SERIAL</Link> <FontAwesomeIcon icon={faMinus} /> uses SERIAL to add
+                      an auto-increment column to a table.
                     </Typography>
                   </ListItem>
                   <ListItem sx={{ textAlign: "justify" }}>

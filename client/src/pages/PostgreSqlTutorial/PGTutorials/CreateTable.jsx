@@ -73,7 +73,7 @@ const CreateTable = () => {
                   <FontAwesomeIcon icon={faCircleCheck} size="2xs" style={{ color: "#4A148C" }} /> <strong>{`data_type`}</strong>:
                 </Typography>{" "}
                 <Typography component={"span"} align={"justify"}>
-                  {`The data type of the column (e.g., `} <code className={"codes"}>INTEGER, VARCHAR, BOOLEAN</code> {`)`}
+                  {"The data type of the column (e.g., "} <code className={"codes"}>INTEGER, VARCHAR, BOOLEAN</code> {")"}
                 </Typography>
               </Typography>
             </ListItem>

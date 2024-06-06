@@ -28,6 +28,9 @@ import Register from "../Auth/Register";
 import SelectDistinct from "../PostgreSqlTutorial/PGTutorials/SelectDistinct";
 import DataTypes from "../PostgreSqlTutorial/PGTutorials/DataTypes";
 import CreateTable from "../PostgreSqlTutorial/PGTutorials/CreateTable";
+import SelectInto from "../PostgreSqlTutorial/PGTutorials/SelectInto";
+import CreateTableAs from "../PostgreSqlTutorial/PGTutorials/CreateTableAs";
+import Serial from "../PostgreSqlTutorial/PGTutorials/Serial";
 
 const Routes = () => {
   const router = createBrowserRouter(
@@ -57,6 +60,9 @@ const Routes = () => {
         <Route path="/PostgreSQL/select-distinct" element={<SelectDistinct />} />
         <Route path="/PostgreSQL/data-types" element={<DataTypes />} />
         <Route path="/PostgreSQL/create-table" element={<CreateTable />} />
+        <Route path="/PostgreSQL/select-into" element={<SelectInto />} />
+        <Route path="/PostgreSQL/create-table-as" element={<CreateTableAs />} />
+        <Route path="/PostgreSQL/serial" element={<Serial />} />
       </>,
     ),
   );

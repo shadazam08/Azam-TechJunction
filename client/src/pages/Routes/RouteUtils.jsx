@@ -15,7 +15,10 @@ const showSideBarPG = () => {
     window.location.pathname === "/PostgreSQL/order-by" ||
     window.location.pathname === "/PostgreSQL/select-distinct" ||
     window.location.pathname === "/PostgreSQL/data-types" ||
-    window.location.pathname === "/PostgreSQL/create-table"
+    window.location.pathname === "/PostgreSQL/create-table" ||
+    window.location.pathname === "/PostgreSQL/select-into" ||
+    window.location.pathname === "/PostgreSQL/create-table-as" ||
+    window.location.pathname === "/PostgreSQL/serial"
   );
 };
 const showSideBarJS = () => {

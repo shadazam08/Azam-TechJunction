@@ -82,13 +82,18 @@ const PGRightSideBar = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
-                <Typography component={"span"}>Select Into & Create table</Typography>
+              <Link href={"/PostgreSQL/select-into"}>
+                <Typography component={"span"}>Select Into</Typography>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href={"#"}>
-                <Typography component={"span"}>Auto-increment column with SERIAL</Typography>
+              <Link href={"/PostgreSQL/create-table-as"}>
+                <Typography component={"span"}>Create table as</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"/PostgreSQL/serial"}>
+                <Typography component={"span"}>SERIAL</Typography>
               </Link>
             </ListItem>
             <ListItem>
